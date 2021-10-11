@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ursa.mk
+    $(LOCAL_DIR)/aosp_ursa.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ursa-user \
-    lineage_ursa-userdebug \
-    lineage_ursa-eng
+    aosp_ursa-user \
+    aosp_ursa-userdebug \
+    aosp_ursa-eng

@@ -6,11 +6,23 @@
 
 $(call inherit-product, device/xiaomi/ursa/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelPlusUI stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# PixelExtended stuff
+PEX_BUILD_TYE := UNOFFICIAL
+PEX_MAINTAINER := jwhan
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_ursa
+PRODUCT_NAME := aosp_ursa
 PRODUCT_DEVICE := ursa
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 Explorer Edition
